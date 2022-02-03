@@ -4,36 +4,28 @@
     "version": "1.0",
     "description": "",
     "icons": {
-        "128": ""
+        "128": "./icons/logo_x128.png"
     },
-    "action": {
-        "default_icon": {
-            "128": ""
-        }
-    },    
     "content_scripts": [
         {
             "matches": [
                 "*://*/*"
             ],
             "js": [
-                "content.js"
+                "./scripts/content.js"
             ]
         }
     ],
     "background": {
-        "scripts": [
-                        
-        ]
+        "service_worker": "./scripts/background.js"
     },
     "permissions": [
         "activeTab",
-        "scripting",
-        "http://coding-style.ru/*"
+        "http://coding-style.ru/"
     ],
     "browser_action": {
         "default_title": "StartPageCleaner",
-        "default_icon": "",
+        "default_icon": "./icons/logo_x128.png",
         "default_popup": "index.html"
     }
 }
