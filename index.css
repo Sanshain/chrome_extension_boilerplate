@@ -1,0 +1,16 @@
+body {
+    min-width: 15em;
+}
+
+#header {
+    cursor: pointer;
+    color: gray;
+}
+
+#header:hover{
+    color: black;
+}
+
+.content{
+    color: gray;
+}

@@ -1,39 +1,36 @@
 {
-    "manifest_version": 2,
-    "name": "Start Page Cleaner",
+    "manifest_version": 3,
+    "name": "Elements Counter",
     "version": "1.0",
     "description": "",
     "icons": {
-        "128": ""
+        "128": "./icons/logo_x128.png"
     },
     "action": {
         "default_icon": {
-            "128": ""
-        }
-    },    
+            "128": "./icons/logo_x128.png"
+        },
+        "default_title": "StartPageCounter",
+        "default_popup": "index.html"        
+    },
+    "host_permissions": [
+        "*://*/*"
+    ],    
     "content_scripts": [
         {
             "matches": [
                 "*://*/*"
             ],
             "js": [
-                "content.js"
+                "./scripts/content.js"
             ]
         }
     ],
     "background": {
-        "scripts": [
-                        
-        ]
+        "service_worker": "./scripts/background.js"
     },
     "permissions": [
         "activeTab",
-        "scripting",
-        "http://coding-style.ru/*"
-    ],
-    "browser_action": {
-        "default_title": "StartPageCleaner",
-        "default_icon": "",
-        "default_popup": "index.html"
-    }
+        "scripting"
+    ]
 }
