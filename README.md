@@ -1,2 +1,2 @@
-# chrome extension boilerplate
+# Chrome Extension Boilerplate
 Boilerplates set for chrome extensions
