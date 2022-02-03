@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Start Page Cleaner",
+    "name": "Elements Counter",
     "version": "1.0",
     "description": "",
     "icons": {
@@ -9,8 +9,13 @@
     "action": {
         "default_icon": {
             "128": "./icons/logo_x128.png"
-        }
-    },    
+        },
+        "default_title": "StartPageCounter",
+        "default_popup": "index.html"        
+    },
+    "host_permissions": [
+        "*://*/*"
+    ],    
     "content_scripts": [
         {
             "matches": [
@@ -26,12 +31,6 @@
     },
     "permissions": [
         "activeTab",
-        "scripting",
-        "http://coding-style.ru/"
-    ],
-    "browser_action": {
-        "default_title": "StartPageCleaner",
-        "default_icon": "./icons/logo_x128.png",
-        "default_popup": "index.html"
-    }
+        "scripting"
+    ]
 }
