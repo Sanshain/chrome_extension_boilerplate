@@ -1,0 +1,39 @@
+{
+    "manifest_version": 2,
+    "name": "Start Page Cleaner",
+    "version": "1.0",
+    "description": "",
+    "icons": {
+        "128": ""
+    },
+    "action": {
+        "default_icon": {
+            "128": ""
+        }
+    },    
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ],
+    "background": {
+        "scripts": [
+                        
+        ]
+    },
+    "permissions": [
+        "activeTab",
+        "scripting",
+        "http://coding-style.ru/*"
+    ],
+    "browser_action": {
+        "default_title": "StartPageCleaner",
+        "default_icon": "",
+        "default_popup": "index.html"
+    }
+}
