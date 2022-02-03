@@ -1,16 +1,11 @@
 {
-    "manifest_version": 3,
+    "manifest_version": 2,
     "name": "Start Page Cleaner",
     "version": "1.0",
     "description": "",
     "icons": {
         "128": "./icons/logo_x128.png"
     },
-    "action": {
-        "default_icon": {
-            "128": "./icons/logo_x128.png"
-        }
-    },    
     "content_scripts": [
         {
             "matches": [
@@ -26,7 +21,6 @@
     },
     "permissions": [
         "activeTab",
-        "scripting",
         "http://coding-style.ru/"
     ],
     "browser_action": {
