@@ -6,10 +6,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+    <style>
+        summary{
+            margin-top: 1em;
+            color: lightblue;
+            cursor: pointer;
+            user-select: none;
+        }
+        .details{
+            display: flex;
+            align-items: baseline;
+            width: 15em;
+        }
+        .details input{
+            height: 2em;
+            margin-right: 0.5em;
+            width: 9.5em;     
+            outline: none;       
+            caret-color: gray;
+            color: #888;
+        }
+        details h4{
+            margin: 0;
+            margin-top: 1em;            
+        }
+
+        button.add{
+            margin-top: 1em;
+            padding: .5em;
+            background-color: azure;            
+            border: 1px solid lightskyblue;
+            cursor: pointer;
+            transition: 1s;     
+            outline-color: gray;       
+        }
+        .add:hover{
+            border-color: lightblue;
+        }
+        .item{
+            margin: 0.5em;
+            border-bottom: 1px solid #ddd;
+            color: chocolate;            
+        }
+    </style>
 </head>
 <body>
     <h1 id="header">Info</h1>
     <div class="content">?</div>
+    <details>
+        <summary>Macroses</summary>
+        <h4>Hide</h4>
+        <div class="details macro">            
+            <input type="text" placeholder="Enter selector">
+            <button class="add">Add</button>
+        </div>
+    </details>    
+    <details>
+        <summary>Details</summary>
+    </details>
     <script src="./index.js"></script>
 </body>
 </html>

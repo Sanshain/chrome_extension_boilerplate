@@ -1,0 +1,22 @@
+{
+  "name": "chrome",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "neo",
+    "dev": "npx esbuild --bundle source/index.ts --outfile=index.js --watch --sourcemap",
+    "esbuild": "npx esbuild --bundle source/index.ts --outfile=index.js --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.258",
+    "esbuild": "^0.19.11",
+    "neo-builder": "^4.1.2-a",
+    "types-spring": "^2.0.2",
+    "typescript": "^5.3.3"
+  }
+}
